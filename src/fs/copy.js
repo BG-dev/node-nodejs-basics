@@ -8,7 +8,6 @@ const copy = async () => {
   try {
     await fs.cp(sourcePath, destinationPath, { force: false, errorOnExist: true, recursive: true });
   } catch (error) {
-    console.log(error);
     throw new Error("FS operation failed");
   }
 };
