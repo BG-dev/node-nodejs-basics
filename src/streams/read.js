@@ -1,6 +1,5 @@
 import * as fs from "fs";
 import * as path from "path";
-import { stdout } from "process";
 
 const read = async () => {
   const fileToReadPath = path.join(import.meta.dirname, "files/fileToRead.txt");
